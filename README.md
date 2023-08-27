@@ -1,12 +1,14 @@
 # No OAuth
 
-Setup a brainless OAuth provider in your development phase.
+Just point your resource server to our authorization server.
 
-    node index.js
+Our authorization server will brainlessly accept all OAuth requests.
 
-## Urls
+> https://no-oauth.onrender.com
 
-Just point your OAuth client to your server at port 13370.
+## Endpoints
+
+According to OAuth, you will need the following essential endpoints.
 
 | path   | usage                                 |
 | ------ | ------------------------------------- |
@@ -14,6 +16,12 @@ Just point your OAuth client to your server at port 13370.
 | /token | gives out access token without asking |
 | /      | counts requests                       |
 
+## Development
+
+Of course, you can also run the authorization server in your own environment.
+
+    node index.js
+
 ## Disclaimer
 
-Remember to switch to real OAuth providers before launching your project.
+Remember to switch to a real OAuth provider before launching your project.
